@@ -1,0 +1,163 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css);
+:root {
+  --var-color-component-advanced: #0072f5;
+  --var-color-component-white: #ffff;
+  --var-color-component-black: #000;
+  --var-color-component-rgba: rgba(0,0,0,.2);
+}
+.cursor-slow {
+  transition: transform 0.5s ease;
+}
+.cursor_invert {
+  filter: invert(1);
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  cursor: url(../assets/cursor.svg), auto;
+  user-select: none;
+  margin: 0;
+}
+html {
+  user-select: none;
+}
+body {
+  font-family: 'General Sans', sans-serif;
+  user-select: none;
+  background: var(--var-color-component-black);
+}
+::selection {
+  background: var(--var-color-component-advanced);
+  color: var(--var-color-component-white);
+}
+
+a {
+  user-select: none;
+  text-decoration: none;
+}
+header.visible {
+  top: 0;
+  translate: 0;
+  z-index: 1000;
+  transition: all 0.4s ease-out;
+}
+
+.header__content__nav {
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translate(0);
+  transition: 0.3s ease transform;
+}
+
+@media (min-width: 48em) {
+  .header__content__nav {
+    transform: none;
+    flex-direction: row;
+    background: transparent;
+    width: auto;
+    height: 100%;
+    position: static;
+  }
+}
+.header__content__nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+@media (min-width: 48em) {
+  .header__content__nav ul {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: calc(0.5rem + 16px);
+  }
+}
+.header__content__nav ul li:not(:last-child) {
+  margin-bottom: 32px;
+}
+@media (min-width: 48em) {
+  .header__content__nav ul li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .header__content__nav ul li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  a {
+    cursor: none;
+  }
+}
+  
+.no-scroll {
+  overflow: hidden;
+}
+
+.header__content__nav.isMenu {
+  transform: translate(100%);
+}
+
+@media (min-width: 48em) {
+  .header__content__toggle {
+    display: none;
+  }
+}
+.visible {
+  top: 0;
+  translate: 0;
+  z-index: 1000;
+  transition: all 0.4s ease-out;
+}
+
+.hb {
+  width: 50px;
+  margin: 0 auto;
+  display: block;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0);  
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0); 
+}
+.closeEnfx {
+  margin-top: 10px;
+  width: 40px;
+  height: 40px;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}

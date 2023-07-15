@@ -1,0 +1,75 @@
+/* Make sure to import nprogress's css first */
+@import "~nprogress/nprogress.css";
+
+#nprogress {
+  .bar {
+    background: var(--var-color-component-advanced);
+    height: 4px;
+    filter: drop-shadow(0 0 0.75rem var(--var-color-component-advanced));
+    
+    &::after {
+      filter: drop-shadow(0 0 0.75rem var(--var-color-component-advanced));
+    }
+  }
+  .peg {
+    box-shadow: 0 0 10px var(--var-color-component-advanced), 0 0 5px var(--var-color-component-advanced);
+  }
+  .spinner-icon {
+    border-top-color: var(--var-color-component-advanced);
+    border-left-color: var(--var-color-component-advanced);
+  }
+}
+.section__Jobs-container {
+  margin-top: 50px;
+  max-width: 700px;
+  position: relative;
+}
+
+.section__Jobs-container span {
+  border-left: 2px solid#64ffda;
+  font-size: 12px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  transition: transform 0.5s;
+}
+
+.section__Jobs-container span.index1-chosen {
+  transform: translateY(0px);
+}
+.section__Jobs-container span.index2-chosen {
+  transform: translateY(42px);
+}
+.section__Jobs-container span.index3-chosen {
+  transform: translateY(84px);
+}
+
+.section__Jobs-styledTabList {
+  max-width: 130px;
+}
+
+.section__Jobs-styledTabList {
+  padding: 0;
+}
+.circle {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #D44343;
+  border-radius: 200px;
+  pointer-events: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
