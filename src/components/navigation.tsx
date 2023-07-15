@@ -336,7 +336,7 @@ function Navigation() {
             <li>
               <Link href="https://t.me/rmzn_dev" target="_blank">Contact</Link>
             </li>
-            <a href="">
+            <a href="https://drive.google.com/file/d/1TIsriL-4eEVu948kiN1XQGeu2ZojiCbv/view?usp=sharing" target="_blank">
               Resume
             </a>
           </ContentUL>
