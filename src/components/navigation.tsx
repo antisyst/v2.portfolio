@@ -54,6 +54,10 @@ z-index: 100;
     color: #fff;
     margin-top: 10px;
     z-index: 100000;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 1px;
+    }
   svg {
     width: 80px;
     height: 66px;
