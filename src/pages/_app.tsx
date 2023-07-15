@@ -13,20 +13,20 @@ Router.events.on('routeChangeError', () => NProgress.done());
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
-  // useEffect(() => {
-  //   const handleKeyPress = (event: KeyboardEvent) => {
-  //     if (event.key === 'F12') {
-  //       event.preventDefault();
-  //       router.push('/error'); 
-  //     }
-  //   };
+  useEffect(() => {
+    const handleKeyPress = (event: KeyboardEvent) => {
+      if (event.key === 'F12') {
+        event.preventDefault();
+        router.push('/error'); 
+      }
+    };
 
-  //   window.addEventListener('keydown', handleKeyPress);
+    window.addEventListener('keydown', handleKeyPress);
 
-  //   return () => {
-  //     window.removeEventListener('keydown', handleKeyPress);
-  //   };
-  // }, []);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
 
   
   useEffect(() => {
