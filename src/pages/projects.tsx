@@ -71,6 +71,7 @@ const ProjectItem = styled.div `
 
     @media only screen and (max-width: 768px) {
     width: 100%;
+    width: 380px;
     margin: 8px 0;
     height: 470px;
 
