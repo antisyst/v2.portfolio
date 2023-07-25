@@ -312,6 +312,18 @@ export default function Projects() {
                     </ProjectItem>
                 </ProjectsContainer>
             <WorksContainer>
+                 <WorksItem>
+                    <WorksH1>ETH searcher</WorksH1>
+                    <WorksButton href="https://ethsearcher.netlify.app/" target="_blank">Visit Project</WorksButton>
+                </WorksItem>
+                   <WorksItem>
+                    <WorksH1>Taycan E-commerce</WorksH1>
+                    <WorksButton href="http://taycan.netlify.app/" target="_blank">Visit Project</WorksButton>
+                 </WorksItem>
+                 <WorksItem>
+                    <WorksH1>World Cup Searcher</WorksH1>
+                    <WorksButton href="https://cupsearch.netlify.app" target="_blank">Visit Project</WorksButton>
+                 </WorksItem>
                 <WorksItem>
                     <WorksH1>URL Shortener</WorksH1>
                     <WorksButton href="https://rmznurl.netlify.app/" target="_blank">Visit Project</WorksButton>
